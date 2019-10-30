@@ -1,1 +1,1 @@
-Tämä on tiedosto, joka tulee lisätyksi repoon.
+Tämä on tiedosto, joka tulee lisätyksi repoon. Sitä on muutettu.
