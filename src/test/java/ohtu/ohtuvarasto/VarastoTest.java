@@ -41,7 +41,7 @@ public class VarastoTest {
 
     @Test
     public void alkusaldollaOikeaSaldo() {
-        assertEquals(5, varasto_alkusaldolla.getSaldo(), vertailuTarkkuus);
+        assertEquals(4, varasto_alkusaldolla.getSaldo(), vertailuTarkkuus);
         assertEquals(0, varasto_virheellisella_alkusaldolla.getSaldo(), vertailuTarkkuus);
     }
 
