@@ -1,1 +1,0 @@
-Tämä lisättiin alkuperäiseen klooniin.
