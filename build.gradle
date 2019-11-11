@@ -6,6 +6,10 @@
  * user guide available at https://guides.gradle.org/creating-new-gradle-builds/
  */
 
+plugins {
+    id 'checkstyle'
+}
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -43,10 +47,15 @@ jacocoTestReport {
         xml.enabled true
         html.enabled true
     }
-    afterEvaluate {
+    // Ei toiminut Gradle 6.0:ssa
+    /*afterEvaluate {
         classDirectories = files(classDirectories.files.collect {
             fileTree(dir: it,
                     exclude: ['main/**'])
         })
-    }
+    }*/
+}
+
+run {
+    standardInput = System.in
 }
